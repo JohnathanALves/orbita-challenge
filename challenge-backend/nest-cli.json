@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/orbita-challenge-back/src",
+  "monorepo": true,
+  "root": "apps/orbita-challenge-back",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/orbita-challenge-back/tsconfig.app.json"
+  },
+  "projects": {
+    "orbita-challenge-back": {
+      "type": "application",
+      "root": "apps/orbita-challenge-back",
+      "entryFile": "main",
+      "sourceRoot": "apps/orbita-challenge-back/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/orbita-challenge-back/tsconfig.app.json"
+      }
+    },
+    "gerador": {
+      "type": "application",
+      "root": "apps/gerador",
+      "entryFile": "main",
+      "sourceRoot": "apps/gerador/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gerador/tsconfig.app.json"
+      }
+    }
+  }
+}
